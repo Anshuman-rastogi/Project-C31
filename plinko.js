@@ -6,8 +6,8 @@ class Plinko{
             isStatic:true
         }
 
-        this.body = Bodies.circle(x, y, this.r, options);
         this.r = r;
+        this.body = Bodies.circle(x, y, this.r, options);
         World.add(world, this.body);
 
     }

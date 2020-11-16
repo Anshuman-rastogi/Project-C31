@@ -35,15 +35,17 @@ function draw() {
     divisions.push(new Divisions(k, height-divisionHeight/2, 10, divisionHeight));
   }
 
-  /*
   for(var j=40; j<=width; j=j+50){
-    plinkos.push(new Plinko(j,75));
+    plinkos.push(new Plinko(j,65,10));
   }
 
   for(var j=15; j<=width-10; j=j+50){
-    plinkos.push(new Plinko(j,175));
+    plinkos.push(new Plinko(j,165,10));
   }
-  */
+
+  for(var j=40; j<=width; j=j+50){
+    plinkos.push(new Plinko(j,265,10));
+  }
 
   ground.display();
 
@@ -55,14 +57,12 @@ function draw() {
     particles[j].display();
   }
 
-  for(var k=0; j<divisions.length; k++){
+  for(var k=0; k<divisions.length; k++){
     divisions[k].display();
   }
 
-  /*
   for(var l=0; l<plinkos.length; l++){
     plinkos[l].display();
   }
-  */
-
+  
 }
